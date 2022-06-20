@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  background: linear-gradient(180deg, #8e269f, #131d38 75%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover, cover;
+  scroll-behavior: smooth;
 }
 
 a {
