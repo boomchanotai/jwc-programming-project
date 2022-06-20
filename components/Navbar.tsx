@@ -43,7 +43,7 @@ const Navbar: FunctionComponent<Props> = ({ reference }: Props) => {
 
   const handleScroll = (element: RefObject<HTMLDivElement>) => {
     element.current?.scrollIntoView();
-    setOpenMenu(!openMenu);
+    setOpenMenu(false);
   };
 
   return (

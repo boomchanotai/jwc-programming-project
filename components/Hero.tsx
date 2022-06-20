@@ -2,9 +2,13 @@ import type { FunctionComponent, RefObject } from "react";
 
 interface Props {
   refElement: RefObject<HTMLDivElement>;
+  setOpenAppointment: (openAppointment: boolean) => void;
 }
 
-const Hero: FunctionComponent<Props> = ({ refElement }: Props) => {
+const Hero: FunctionComponent<Props> = ({
+  refElement,
+  setOpenAppointment,
+}: Props) => {
   return (
     <div
       ref={refElement}
@@ -15,7 +19,10 @@ const Hero: FunctionComponent<Props> = ({ refElement }: Props) => {
         ผู้มีประสบการณ์พยากรณ์กว่า 10 ปี พร้อมคำพยากรณ์ที่แม่นยำ
       </div>
       <div>
-        <button className="py-4 px-12 text-midnight bg-white text-2xl">
+        <button
+          onClick={() => setOpenAppointment(true)}
+          className="py-4 px-12 text-midnight bg-white text-2xl"
+        >
           จองคิว
         </button>
       </div>
