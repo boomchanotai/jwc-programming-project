@@ -15,7 +15,7 @@ const Contact: FunctionComponent<Props> = ({ refElement }: Props) => {
         <Image src="/map.png" alt="Contact" layout="fill" />
       </div>
       <div>
-        <h2 className="text-2xl">ทำนายชะตากับหมอหมึก</h2>
+        <h2 className="text-xl md:text-2xl font-medium">ทำนายชะตากับหมอหมึก</h2>
         <div className="my-4">
           สามารถจองคิวได้ในเว็บหรือ <br />
           อีเมล: octopus_fortune@teller.com <br />

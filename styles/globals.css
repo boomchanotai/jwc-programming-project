@@ -13,6 +13,7 @@ body {
   background-attachment: fixed;
   background-size: cover, cover;
   scroll-behavior: smooth;
+  font-size: 1.125rem;
 }
 
 a {
